@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1781123759 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\dfs.cpp
+	"algoritmos.h"
+	<iostream>
+	<algorithm>
+
+1781125030 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
+	<vector>
+	<string>
+
+1781125051 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
+	<iostream>
+	"algoritmos.h"
+
