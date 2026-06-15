@@ -25,7 +25,7 @@ int main() {
     while (opcao != 0) {
         cout << "=== PAINEL DE METODOS MODULARES ===" << endl;
         cout << "1. Executar Modulo DFS" << endl;
-        cout << "2. Executar Modulo BFS (Ainda nao implementado)" << endl;
+        cout << "2. Executar Modulo BFS" << endl;
         cout << "8. Exibir Grafo Original" << endl;
         cout << "0. Sair" << endl;
         cout << "Escolha uma opcao: ";
@@ -39,7 +39,8 @@ int main() {
                 printGrafo("Resultado: Modulo DFS", resultado);
                 break;
             case 2:
-                cout << "\n[Aviso] O arquivo correspondente ao BFS precisa ser criado e implementado!\n" << endl;
+                resultado = reducaoBFS(V, listaAdj);
+                printGrafo("Resultado: Modulo BFS", resultado);
                 break;
             case 8:
                 printGrafo("Grafo Original", listaAdj);
