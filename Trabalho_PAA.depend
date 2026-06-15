@@ -8,7 +8,7 @@
 	<vector>
 	<string>
 
-1781125051 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
+1781555569 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
 	<iostream>
 	"algoritmos.h"
 
@@ -16,4 +16,10 @@
 	"../algoritmos.h"
 	<iostream>
 	<algorithm>
+
+1781555586 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\bfs.cpp
+	"../algoritmos.h"
+	<iostream>
+	<algorithm>
+	<queue>
 
