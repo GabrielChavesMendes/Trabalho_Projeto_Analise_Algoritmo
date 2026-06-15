@@ -3,7 +3,6 @@
 
 using namespace std;
 
-// Implementação da função de exibição compartilhada
 void printGrafo(const string& titulo, const vector<vector<int>>& adj) {
     cout << "\n=== " << titulo << " ===" << endl;
     for (size_t i = 0; i < adj.size(); ++i) {

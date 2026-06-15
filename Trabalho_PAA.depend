@@ -4,11 +4,16 @@
 	<iostream>
 	<algorithm>
 
-1781125030 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
+1781552681 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
 	<vector>
 	<string>
 
 1781125051 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
 	<iostream>
 	"algoritmos.h"
+
+1781551987 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\dfs.cpp
+	"../algoritmos.h"
+	<iostream>
+	<algorithm>
 

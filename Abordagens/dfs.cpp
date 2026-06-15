@@ -1,4 +1,4 @@
-#include "algoritmos.h"
+#include "../algoritmos.h"
 #include <iostream>
 #include <algorithm>
 
