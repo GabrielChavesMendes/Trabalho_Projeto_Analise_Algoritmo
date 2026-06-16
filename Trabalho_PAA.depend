@@ -4,7 +4,7 @@
 	<iostream>
 	<algorithm>
 
-1781552681 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
+1781644056 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
 	<vector>
 	<string>
 
@@ -12,14 +12,19 @@
 	<iostream>
 	"algoritmos.h"
 
-1781551987 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\dfs.cpp
+1781643786 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\dfs.cpp
 	"../algoritmos.h"
 	<iostream>
 	<algorithm>
 
-1781555586 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\bfs.cpp
+1781555649 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\bfs.cpp
 	"../algoritmos.h"
 	<iostream>
 	<algorithm>
 	<queue>
+
+1781642979 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\dfsmemoizationdp.cpp
+	"../algoritmos.h"
+	<iostream>
+	<algorithm>
 
