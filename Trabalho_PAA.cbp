@@ -32,8 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Abordagens/bfs.cpp" />
+		<Unit filename="Abordagens/dfs.cpp" />
+		<Unit filename="Abordagens/dfsMemoizationDP.cpp" />
 		<Unit filename="algoritmos.h" />
-		<Unit filename="dfs.cpp" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
