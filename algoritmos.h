@@ -8,5 +8,6 @@ void printGrafo(const std::string& titulo, const std::vector<std::vector<int>>& 
 
 std::vector<std::vector<int>> reducaoDFS(int V, const std::vector<std::vector<int>>& adj);
 std::vector<std::vector<int>> reducaoBFS(int V, const std::vector<std::vector<int>>& adj);
+std::vector<std::vector<int>> reducaoTransitivaMemoization(int V, const std::vector<std::vector<int>>& adj);
 
 #endif

@@ -7,25 +7,34 @@ void printGrafo(const string& titulo, const vector<vector<int>>& adj) {
     cout << "\n=== " << titulo << " ===" << endl;
     for (size_t i = 0; i < adj.size(); ++i) {
         cout << "Vertice " << i << " aponta para: ";
-        for (int vizinho : adj[i]) cout << vizinho << " ";
+        if (adj[i].empty()) {
+            cout << "(ninguem)";
+        } else {
+            for (int vizinho : adj[i]) cout << vizinho << " ";
+        }
         cout << endl;
     }
     cout << "=========================\n" << endl;
 }
 
 int main() {
-    int V = 4;
+    int V = 8; // Aumentado para 8 vértices
     vector<vector<int>> listaAdj(V);
-    listaAdj[0] = {1, 2, 3};
-    listaAdj[1] = {2};
-    listaAdj[2] = {3};
-    listaAdj[3] = {};
+    listaAdj[0] = {1, 2, 3, 4, 7};
+    listaAdj[1] = {2, 3, 5};
+    listaAdj[2] = {3, 4, 6};
+    listaAdj[3] = {4, 5, 7};
+    listaAdj[4] = {5, 6};
+    listaAdj[5] = {6, 7};
+    listaAdj[6] = {7};
+    listaAdj[7] = {};
 
     int opcao = -1;
     while (opcao != 0) {
-        cout << "=== PAINEL DE METODOS MODULARES ===" << endl;
+        cout << "\n=== PAINEL DE METODOS MODULARES ===" << endl;
         cout << "1. Executar Modulo DFS" << endl;
         cout << "2. Executar Modulo BFS" << endl;
+        cout << "3. Executar DFS com Memoization (DP)" << endl;
         cout << "8. Exibir Grafo Original" << endl;
         cout << "0. Sair" << endl;
         cout << "Escolha uma opcao: ";
@@ -35,12 +44,19 @@ int main() {
 
         switch (opcao) {
             case 1:
+                printGrafo("Grafo Original", listaAdj);
                 resultado = reducaoDFS(V, listaAdj);
                 printGrafo("Resultado: Modulo DFS", resultado);
                 break;
             case 2:
+                printGrafo("Grafo Original", listaAdj);
                 resultado = reducaoBFS(V, listaAdj);
                 printGrafo("Resultado: Modulo BFS", resultado);
+                break;
+            case 3:
+                printGrafo("Grafo Original", listaAdj);
+                resultado = reducaoTransitivaMemoization(V, listaAdj);
+                printGrafo("Resultado: DFS com Memoization (DP)", resultado);
                 break;
             case 8:
                 printGrafo("Grafo Original", listaAdj);
