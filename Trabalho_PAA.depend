@@ -4,11 +4,11 @@
 	<iostream>
 	<algorithm>
 
-1781644056 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
+1781883002 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
 	<vector>
 	<string>
 
-1781555569 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
+1781883441 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
 	<iostream>
 	"algoritmos.h"
 
@@ -27,4 +27,13 @@
 	"../algoritmos.h"
 	<iostream>
 	<algorithm>
+
+1781883113 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\tarjanscc.cpp
+	"../algoritmos.h"
+	<iostream>
+	<vector>
+	<stack>
+	<algorithm>
+	<map>
+	<set>
 
