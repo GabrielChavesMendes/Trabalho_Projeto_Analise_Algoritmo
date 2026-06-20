@@ -4,11 +4,11 @@
 	<iostream>
 	<algorithm>
 
-1781883002 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
+1781967420 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
 	<vector>
 	<string>
 
-1781883441 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
+1781967742 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
 	<iostream>
 	"algoritmos.h"
 
@@ -28,7 +28,7 @@
 	<iostream>
 	<algorithm>
 
-1781883113 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\tarjanscc.cpp
+1781883574 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\tarjanscc.cpp
 	"../algoritmos.h"
 	<iostream>
 	<vector>
@@ -36,4 +36,24 @@
 	<algorithm>
 	<map>
 	<set>
+
+1781962190 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\warshall.cpp
+	"../algoritmos.h"
+	<iostream>
+	<vector>
+	<algorithm>
+
+1781965280 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\otimizacaobitset.cpp
+	"../algoritmos.h"
+	<iostream>
+	<vector>
+	<algorithm>
+	<bitset>
+
+1781967703 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\kahn.cpp
+	"../algoritmos.h"
+	<iostream>
+	<vector>
+	<queue>
+	<algorithm>
 

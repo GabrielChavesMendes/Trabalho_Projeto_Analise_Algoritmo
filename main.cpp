@@ -48,7 +48,9 @@ int main() {
         cout << "3. Executar DFS com Memoization (DP)" << endl;
         cout << "4. Executar Tratamento de Ciclos SCC (Tarjan)" << endl;
         cout << "5. Executar Warshall com Matriz de Adjacencia" << endl;
-        cout << "8. Exibir Grafo Original" << endl;
+        cout << "6. Executar Otimizacao com Bitset" << endl;
+        cout << "7. Executar Reducao com Algoritmo de Kahn" << endl;
+        cout << "9. Exibir Grafo Original" << endl;
         cout << "0. Sair" << endl;
         cout << "Escolha uma opcao: ";
         cin >> opcao;
@@ -86,8 +88,22 @@ int main() {
                 printGrafo("Resultado: Warshall com Matriz de Adjacencia", resultado);
                 break;
 
-            case 8:
+            case 6:
                 printGrafo("Grafo Original", listaAdj);
+                resultado = reducaoTransitivaBitset(V, listaAdj);
+                printGrafo("Resultado: Otimizacao com Bitset", resultado);
+                break;
+
+            case 7:
+                printGrafo("Grafo Original", listaAdj);
+                resultado = reducaoKahn(V, listaAdj);
+                printGrafo("Resultado: Reducao com Algoritmo de Kahn", resultado);
+                break;
+
+            case 9:
+                printGrafo("Grafo Original", listaAdj);
+                printf("\n");
+                printGrafo("Grafo Original (com Ciclo)", listaAdjCiclo);
                 break;
 
             case 0:
