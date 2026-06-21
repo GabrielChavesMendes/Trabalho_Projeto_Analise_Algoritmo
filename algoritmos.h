@@ -13,5 +13,6 @@ std::vector<std::vector<int>> reducaoTransitivaTarjan(int V, const std::vector<s
 std::vector<std::vector<int>> reducaoWarshall(int V, const std::vector<std::vector<int>>& adj);
 std::vector<std::vector<int>> reducaoTransitivaBitset(int V, const std::vector<std::vector<int>>& adj);
 std::vector<std::vector<int>> reducaoKahn(int V, const std::vector<std::vector<int>>& adj);
+std::vector<std::vector<int>> reducaoDFSTopologica(int V, const std::vector<std::vector<int>>& adj);
 
 #endif

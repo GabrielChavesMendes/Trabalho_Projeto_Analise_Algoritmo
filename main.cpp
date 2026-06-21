@@ -50,6 +50,7 @@ int main() {
         cout << "5. Executar Warshall com Matriz de Adjacencia" << endl;
         cout << "6. Executar Otimizacao com Bitset" << endl;
         cout << "7. Executar Reducao com Algoritmo de Kahn" << endl;
+        cout << "8. Executar DFS Topologica para DAG" << endl;
         cout << "9. Exibir Grafo Original" << endl;
         cout << "0. Sair" << endl;
         cout << "Escolha uma opcao: ";
@@ -98,6 +99,12 @@ int main() {
                 printGrafo("Grafo Original", listaAdj);
                 resultado = reducaoKahn(V, listaAdj);
                 printGrafo("Resultado: Reducao com Algoritmo de Kahn", resultado);
+                break;
+
+            case 8:
+                printGrafo("Grafo Original", listaAdj);
+                resultado = reducaoDFSTopologica(V, listaAdj);
+                printGrafo("Resultado: DFS Topologica para DAG", resultado);
                 break;
 
             case 9:
