@@ -4,11 +4,11 @@
 	<iostream>
 	<algorithm>
 
-1781967420 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
+1782069508 c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\algoritmos.h
 	<vector>
 	<string>
 
-1781967742 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
+1782069508 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\main.cpp
 	<iostream>
 	"algoritmos.h"
 
@@ -50,10 +50,17 @@
 	<algorithm>
 	<bitset>
 
-1781967703 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\kahn.cpp
+1782069508 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\kahn.cpp
 	"../algoritmos.h"
 	<iostream>
 	<vector>
 	<queue>
+	<algorithm>
+
+1782069508 source:c:\users\gabriel\onedrive\documents\trabalho_paa\trabalho_paa\abordagens\dfstopologia.cpp
+	"../algoritmos.h"
+	<iostream>
+	<vector>
+	<stack>
 	<algorithm>
 
