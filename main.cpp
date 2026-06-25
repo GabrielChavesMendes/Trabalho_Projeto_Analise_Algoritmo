@@ -18,7 +18,10 @@ void printGrafo(const string& titulo, const vector<vector<int>>& adj) {
 }
 
 int main() {
-    //Grafo Sem Ciclo
+    // ==========================================
+    // GRAFOS PARA REDUÇÕES CLÁSSICAS E DAGS
+    // ==========================================
+    // Grafo 1: Sem Ciclo (DAG)
     int V = 8;
     vector<vector<int>> listaAdj(V);
     listaAdj[0] = {1, 2, 3, 4, 7};
@@ -30,19 +33,42 @@ int main() {
     listaAdj[6] = {7};
     listaAdj[7] = {};
 
-    //Grafo Com Ciclo
+    // Grafo 2: Com Ciclo (Para Tarjan)
     int V2 = 6;
     vector<vector<int>> listaAdjCiclo(V2);
     listaAdjCiclo[0] = {1, 5};
     listaAdjCiclo[1] = {2};
-    listaAdjCiclo[2] = {0, 3, 4}; //Liga o ciclo 1 ao ciclo 2
+    listaAdjCiclo[2] = {0, 3, 4}; // Liga o ciclo 1 ao ciclo 2
     listaAdjCiclo[3] = {4, 5};
-    listaAdjCiclo[4] = {3,5};
+    listaAdjCiclo[4] = {3, 5};
     listaAdjCiclo[5] = {};
+
+    // ==========================================
+    // GRAFOS PARA CAMINHOS HAMILTONIANOS
+    // ==========================================
+    // Grafo 3: Torneio Perfeito (V = 5) - Todos contra Todos
+    int V3_Torneio = 5;
+    vector<vector<int>> listaTorneio(V3_Torneio);
+    listaTorneio[0] = {1, 2, 3, 4};
+    listaTorneio[1] = {2, 3, 4};
+    listaTorneio[2] = {3, 4};
+    listaTorneio[3] = {4};
+    listaTorneio[4] = {};
+
+    // Grafo 4: Grafo Heuristica Gulosa (V = 5)
+    int V4_Guloso = 5;
+    vector<vector<int>> listaGuloso(V4_Guloso);
+    listaGuloso[0] = {2, 3, 4};
+    listaGuloso[1] = {4, 3};
+    listaGuloso[2] = {1, 4};
+    listaGuloso[3] = {};
+    listaGuloso[4] = {3};
 
     int opcao = -1;
     while (opcao != 0) {
-        cout << "\n=== PAINEL DE METODOS MODULARES ===" << endl;
+       cout << "\n=== PAINEL DE METODOS MODULARES ===" << endl;
+
+        cout << "--- Abordagens em DAGs e Ciclos ---" << endl;
         cout << "1. Executar Modulo DFS" << endl;
         cout << "2. Executar Modulo BFS" << endl;
         cout << "3. Executar DFS com Memoization (DP)" << endl;
@@ -51,7 +77,14 @@ int main() {
         cout << "6. Executar Otimizacao com Bitset" << endl;
         cout << "7. Executar Reducao com Algoritmo de Kahn" << endl;
         cout << "8. Executar DFS Topologica para DAG" << endl;
-        cout << "9. Exibir Grafo Original" << endl;
+
+        cout << "\n--- Abordagens via Caminho Hamiltoniano ---" << endl;
+        cout << "9. Executar Unicidade de Ordenacao Topologica" << endl;
+        cout << "10. Executar Teorema de Redei (Grafo de Torneio)" << endl;
+        cout << "11. Executar Heuristica Gulosa (Grafos Gerais)" << endl;
+
+        cout << "\n--- Utilitarios ---" << endl;
+        cout << "12. Exibir Todos os Grafos Originais" << endl;
         cout << "0. Sair" << endl;
         cout << "Escolha uma opcao: ";
         cin >> opcao;
