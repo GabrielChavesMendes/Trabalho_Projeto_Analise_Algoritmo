@@ -19,7 +19,7 @@ void printGrafo(const string& titulo, const vector<vector<int>>& adj) {
 
 int main() {
     // ==========================================
-    // GRAFOS PARA REDUÇÕES CLÁSSICAS E DAGS
+    // GRAFOS PARA REDUï¿½ï¿½ES CLï¿½SSICAS E DAGS
     // ==========================================
     // Grafo 1: Sem Ciclo (DAG)
     int V = 8;
@@ -141,9 +141,15 @@ int main() {
                 break;
 
             case 9:
-                printGrafo("Grafo Original", listaAdj);
-                printf("\n");
-                printGrafo("Grafo Original (com Ciclo)", listaAdjCiclo);
+                printGrafo("Grafo Original (DAG)", listaAdj);
+                resultado = reducaoHamiltonianaOrdenacao(V, listaAdj);
+                printGrafo("Resultado: Unicidade de Ordenacao Topologica", resultado);
+                break;
+
+            case 10:
+                printGrafo("Grafo Original (Torneio)", listaTorneio);
+                resultado = reducaoHamiltonianaRedei(V3_Torneio, listaTorneio);
+                printGrafo("Resultado: Teorema de Redei", resultado);
                 break;
 
             case 0:
