@@ -19,7 +19,7 @@ using namespace std;
  * Estrategia: tenta multiplos pontos de partida (0 ate V-1) para aumentar
  * a chance de sucesso em grafos gerais.
  *
- * Pre-condicao: grafo deve ter pelo menos um Caminho Hamiltoniano.
+ * Pre-condicao: heuristica (pode falhar mesmo que exista Caminho Hamiltoniano).
  * Pos-condicao: retorna caminho como lista de arestas diretas; se falhar
  *              em todos os pontos de partida, retorna grafo original.
  */
