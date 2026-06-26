@@ -36,6 +36,7 @@
 		<Unit filename="Abordagens/dfs.cpp" />
 		<Unit filename="Abordagens/dfsMemoizationDP.cpp" />
 		<Unit filename="Abordagens/dfsTopologia.cpp" />
+		<Unit filename="Abordagens/guloso.cpp" />
 		<Unit filename="Abordagens/kahn.cpp" />
 		<Unit filename="Abordagens/otimizacaoBitset.cpp" />
 		<Unit filename="Abordagens/tarjanSCC.cpp" />
