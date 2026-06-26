@@ -152,6 +152,12 @@ int main() {
                 printGrafo("Resultado: Teorema de Redei", resultado);
                 break;
 
+            case 11:
+                printGrafo("Grafo Original (Heuristica Gulosa)", listaGuloso);
+                resultado = reducaoHamiltonianaGulosa(V4_Guloso, listaGuloso);
+                printGrafo("Resultado: Heuristica Gulosa", resultado);
+                break;
+
             case 0:
                 cout << "Saindo do programa..." << endl;
                 break;
