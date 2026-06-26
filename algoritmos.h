@@ -16,5 +16,6 @@ std::vector<std::vector<int>> reducaoKahn(int V, const std::vector<std::vector<i
 std::vector<std::vector<int>> reducaoDFSTopologica(int V, const std::vector<std::vector<int>>& adj);
 std::vector<std::vector<int>> reducaoHamiltonianaOrdenacao(int V, const std::vector<std::vector<int>>& adj);
 std::vector<std::vector<int>> reducaoHamiltonianaRedei(int V, const std::vector<std::vector<int>>& adj);
+std::vector<std::vector<int>> reducaoHamiltonianaGulosa(int V, const std::vector<std::vector<int>>& adj);
 
 #endif
