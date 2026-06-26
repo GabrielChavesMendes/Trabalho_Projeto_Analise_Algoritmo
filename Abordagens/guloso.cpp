@@ -57,10 +57,9 @@ vector<vector<int>> reducaoHamiltonianaGulosa(int V, const vector<vector<int>>& 
             
             // Se nao ha vizinho nao visitado, caminho bloqueado (beco sem saida)
             if (proximoVertice == -1) {
-                cout << "       [BECO] Vertice " << atual << " nao tem vizinhos nao visitados. "
-                     << "Visitados ate agora: " << (int)caminho.size() << "/" << V << endl;
-                sucesso = false;
-                break;
+                cerr << "       [FALHA] Vertice " << atual << " nao tem vizinhos nao visitados. Visitados ate agora: "
+                     << (int)caminho.size() << "/" << V << ". Retornando grafo original." << endl;
+                return adj;
             }
             
             // Avanca para proximo vertice
