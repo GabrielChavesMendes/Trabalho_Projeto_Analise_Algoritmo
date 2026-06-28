@@ -1,0 +1,31 @@
+```gitignore
+# Arquivos compilados
+*.exe
+*.out
+*.o
+*.obj
+
+# Pastas de build/compilação
+bin/
+obj/
+build/
+Debug/
+Release/
+
+# Code::Blocks
+*.layout
+*.depend
+
+# Arquivos temporários
+*.log
+*.tmp
+*.aux
+*.toc
+*.synctex.gz
+
+# Sistema operacional / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+```
