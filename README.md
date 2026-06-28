@@ -42,6 +42,8 @@ As implementações estão organizadas na pasta `Abordagens/`:
 │   └── warshall.cpp
 ├── algoritmos.h
 ├── main.cpp
+├── Trabalho_PAA.cbp
+├── .gitignore
 └── README.md
 ```
 
